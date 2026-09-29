@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f4f1ea;
+  color: #22303c;
+  margin-top: 40px;
+}
+
+#tablero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  max-width: 300px;
+  margin: 20px auto;
+  background: #d9d2c3;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.celda {
+  aspect-ratio: 1;
+  font-size: 3rem;
+  font-weight: bold;
+  background: #fff;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.celda.X { color: #d64545; }
+.celda.O { color: #2b7bb9; }
+
+/* Resalta la ficha que elegiste para mover */
+.sel { 
+  background: #f2c94c; 
+}
+
+/* Resalta la línea ganadora */
+.win { 
+  background: #bfe5c4; 
+  outline: 4px solid #f2c94c; 
+}
+
+button.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 8px;
+  background: #22303c;
+  color: #fff;
+  cursor: pointer;
+}
