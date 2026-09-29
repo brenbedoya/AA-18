@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ta Te Ti</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>TA TE TI</h1>
+<div id="score">
+<div class="sc px" id="sX">Jugador X<b id="nX">0</b></div>
+<div class="sc po" id="sO">Jugador O<b id="nO">0</b></div>
+</div>
+<div id="status" aria-live="polite"></div>
+<div id="board"></div>
+<button class="reset" id="again">Nueva partida</button>
+<div class="rules">
+<b>Reglas</b>
+<ul>
+<li>2 jugadores, 3 fichas cada uno.</li>
+<li>Se turnan para colocar una ficha en una casilla vacía.</li>
+<li>Con las 6 fichas en el tablero, se mueven a una casilla vacía contigua.</li>
+<li>Gana quien alinee 3 fichas: horizontal, vertical o diagonal.</li>
+</ul>
+</div>
+<small>Juego responsable.</small>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
